@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="Main.css" rel="stylesheet"/>
+</head>
+<body>
+       <div class="ghost">
+              <div class="body">
+                  <div class="face">
+                     	<div class="eye"></div>
+                     	<div class="eye"></div>
+                     	<div class="mouse"></div>
+                  </div>
+              </div>
+                <div class="bottom">
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+       			</div>      
+       </div>
+       <script>
+          document.body.addEventListener('mousemove', function(e){
+        	   console.log(e);
+        	  document.querySelector('.ghost').style.left = e.pageX + 'px';
+        	  document.querySelector('.ghost').style.top = e.pageY + 'px';
+          });
+       </script> 
+</body>
+</html>
